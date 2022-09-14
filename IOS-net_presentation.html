@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>IOS-net presentation</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/IOS-net.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Title -->
+			<section>
+				<img src="./images/Logo_iosnet_proj.svg" alt="Logo IOS-net" width="40%">
+				<h2>Introduction to the IOS-net open data tools</h2>
+				<br />
+				<p>-- <b>mathieu.delsaut@univ-reunion.fr</b> --</p>
+				<p>IOS-net closing seminar</p>
+				<p>19<sup>th</sup> September 2022</p>
+				<div class="r-hstack">
+					<img src="./images/logo_UR.jpg" alt="Logo ENERGY-Lab" width="30%">
+					<img src="./images/logo_ENERGY-Lab.png" alt="Logo ENERGY-Lab" width="0%">
+				</div>
+			</section>
+
+			<!-- Logo finançeurs -->
+			<section>
+				<div class="r-hstack justify-center">
+					<div style="width: 30%; margin: 40px"><img src="./images/logo_COI.png" alt="Logo COI"></div>
+					<div style="width: 30%; margin: 40px"><img src="./images/Logo_etat.png" alt="Logo Etat Français">
+					</div>
+					<div style="width: 30%; margin: 40px"><img src="./images/logo_europe.jpg"
+							alt="Logo Union Européenne"></div>
+					<div style="width: 40%; margin: 40px"><img src="./images/Logo_Region_Reunion.png"
+							alt="Logo Région Réunion"></div>
+				</div>
+			</section>
+
+			<!-- Introduction -->
+			<section>
+				<h2>Introduction</h2>
+				<br />
+				<img src="./images/FAIR_data.png" alt="fair" width="70%">
+				<div class="r-stack">
+					<div class="fragment fade-in-then-out">
+						<h4>Findable</h4>
+						<ul>
+							<li><b>DOI</b> : the data obtain an unique globally ID and forever persistant.</li>
+							<li><b>OPeNDAP</b> : the metadata is recorded in a searchable way (readable and
+								searchable).</li>
+						</ul>
+					</div>
+					<div class="fragment fade-in-then-out">
+						<h4>Accessible</h4>
+						<ul>
+							<li><b>OPeNDAP</b> : the data can be retrieved thanks to their identifier using a
+								standardized communication protocol. OPeNDAP is open, free and universally
+								implementable.</li>
+						</ul>
+					</div>
+					<div class="fragment fade-in-then-out">
+						<h4>Interoperable</h4>
+						<ul>
+							<li><b>CF Conventions</b> : the data uses a formal, accessible, shared and widely
+								applicable model for the representation of knowledge (standards on variables, units,
+								and general metadata).</li>
+						</ul>
+					</div>
+					<div class="fragment">
+						<h4>Reusable</h4>
+						<ul>
+							<li><b>Creative Common</b> : each dataset is published under a clear and acceccible user
+								license.</li>
+							<li><b>CF Conventions</b> : the data is associated with its origin and respects the
+								standards of the community applicable to the field.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Function Schema -->
+			<section>
+				<section>
+					<h1>Functional Schema</h1>
+					<h2>2019 vs 2022</h2>
+				</section>
+				<section>
+					<h3>2019</h3>
+					<img src="./images/old_functional_shcema.svg" width="80%">
+				</section>
+				<section>
+					<h3>2022</h3>
+					<img src="./images/new_functional_shcema.svg" width="80%">
+				</section>
+			</section>
+
+			<!-- A database migration -->
+			<section>
+				<section>
+					<h2>A database migration</h2>
+					<br />
+					<img src="./images/bdd_migration.svg" width="80%">
+				</section>
+				<section>
+					<h2>A database migration</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Usage of time serie database (DB) : InfluxDB,</li>
+						<li>New injertor of data in golang : the traitment chain is quicker,</li>
+						<li>New metadata DB using MongoDB : <b>SensorDB</b>,</li>
+						<li>New app to help maintainer record metadata : <b>SensorsApp</b>.</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Need to update all tools using the DB,</li>
+						<li>No more quality control store on the DB (but release python library <b>pybsrnqc</b>),</li>
+						<li>Name of stations and sensors changent for better clarity.</li>
+					</ul>
+					<br /><br />
+					<p>The database is now called <b>SolarDB</b></p>
+				</section>
+			</section>
+
+			<!-- Galilée -->
+			<section>
+				<section>
+					<h2>IOS-net project website : Galilée<h2>
+							<br />
+							<h3>News features</h3>
+							<ul>
+								<li>English, finally !</li>
+								<li>Two new kinds of servicies : API & languages libraries,</li>
+								<li>New news and the all episodes of IOS-net documentary.</li>
+							</ul>
+							<br /><br />
+							<h3><a href="#/5/2">https://galilee.univ-reunion.fr/</a></h3>
+				</section>
+
+				<section data-background-iframe="https://galilee.univ-reunion.fr/" data-background-interactive>
+				</section>
+			</section>
+
+			<!-- API -->
+			<section>
+				<section>
+					<h2>New API </h2>
+					<img src="./images/new_API.svg" width="50%">
+				</section>
+				<section>
+					<h2>SolarDB API</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Full access to data and metadata,</li>
+						<li>Everybody can use it but with registration,</li>
+						<li>Support of CSV and JSON formats,</li>
+						<li>Full documentation,</li>
+						<li>Capacity to request aggregations.</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Address of API change,</li>
+						<li>Necessity to rewrite all servicies using old API.</li>
+					</ul>
+					<br /><br />
+					<h3>Link</h3>
+					<h3><a>https://solardb.univ-reunion.fr</a></h3>
+				</section>
+				<section data-background-iframe="https://solardb.univ-reunion.fr/" data-background-interactive>
+				</section>
+			</section>
+
+			<!-- Client libraries -->
+			<section>
+				<section>
+					<h2>Client Libraries</h2>
+					<img src="./images/client_libraries.svg" width="50%">
+					<div>
+						<a>https://github.com/LE2P/rSolarDB</a>
+						<br />
+						<a>https://pypi.org/project/pysolardb/</a>
+					</div>
+					<!-- TODO : METTRE DES EXEMPLE DE CODE  : PAREIL POUR API-->
+				</section>
+			</section>
+
+			<!-- SolarIO -->
+			<section>
+				<section>
+					<h2>SolarIO</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Default data retrieval is hourly aggregation,</li>
+						<li>Possibility to switch between 1h, 10mins and 1min,</li>
+						<li>Aggregation : mean, max, min.</li>
+					</ul>
+					<br /><br />
+					<h3>Links</h3>
+					<ul>
+						<li>Web : <a>https://galilee.univ-reunion.fr/SolarIO</a></li>
+						<li>iOS : <a>https://apps.apple.com/fr/app/solar-io/id1478594442</a></li>
+						<li>Android : <a>https://play.google.com/store/apps/details?id=fr.le2p.www</a></li>
+					</ul>
+
+				</section>
+				<section data-background-iframe="https://galilee.univ-reunion.fr/SolarIO/" data-background-interactive>
+				</section>
+			</section>
+
+			<!-- TDS and Zenodo -->
+			<section>
+				<section>
+					<h2>THREDDS Data Server</h2>
+					<p>FAIR data server using netcdf and csv</p>
+					<h3>News features</h3>
+					<ul>
+						<li>Presence of all stations managed by EnergyLab,</li>
+						<li>Enhance the CF-Conventions version 1.08.</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Monthly files,</li>
+						<li>Sensors and stations namming conventions changed.</li>
+					</ul>
+					<br /><br />
+					<h3>Link</h3>
+					<h4><a href="#/9/2">https://galilee.univ-reunion.fr/thredds/catalog.html</a></h4>
+				</section>
+				<section data-background-iframe="https://galilee.univ-reunion.fr/thredds/catalog.html"
+					data-background-interactive></section>
+			</section>
+
+			<!-- (Optionnal) Training workshop -->
+			<section>
+				<h2>(Optionnal) Training workshop : Acces and manipulation ... </h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			width: 1920,
+			height: 1080,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2.0,
+			hash: true,
+			slideNumber: 'c/t',
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+		});
+	</script>
+</body>
+
+</html>
