@@ -17,14 +17,15 @@
 @import url(../../../dist/theme/fonts/exo/exo.css);
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #fff;
+$backgroundColor: #ffffff;
 
 $mainColor: #343535;
 $headingColor: #F39916;
 
+
 $mainFontSize: 42px;
-$mainFont: 'Titillium Web', sans-serif;
-$headingFont: 'Exo';
+$mainFont: 'Titillium web', sans-serif;
+$headingFont: 'exo' ;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: normal;
