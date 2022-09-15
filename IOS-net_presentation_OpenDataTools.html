@@ -183,7 +183,7 @@
 				<section>
 					<h4>Example of using API with Curl</h4>
 					<br />
-					<pre><code data-line-numbers="1|3|5-6" data-trim data-noescape>
+					<pre class="bash"><code data-line-numbers="1|3|5-6" data-trim data-noescape>
 					curl -c cookie.txt https://solardb.univ-reunion.fr/api/v1/login?token=YOURTOKENHERE
 
 					curl -s -b cookie.txt https://solardb.univ-reunion.fr/api/v1/data/json?site=antananarivo | jq ".data"
@@ -211,7 +211,7 @@
 				<section>
 					<h4>Example with python :</h4>
 					<br />
-					<pre><code data-line-numbers="1|2-4|6|8|10-15" data-trim data-noescape>
+					<pre  class="python"><code data-line-numbers="1|2-4|6|8|10-15" data-trim data-noescape>
 					# pip install pysolardb
 					from pysolardb.SolarDB import SolarDB
 					from datetime import datetime as dt
@@ -236,7 +236,7 @@
 				<section>
 					<h4>Example with R :</h4>
 					<br />
-					<pre><code data-line-numbers="1-2|4|6|8-9" data-trim data-noescape>
+					<pre class = "r"><code data-line-numbers="1-2|4|6|8-9" data-trim data-noescape>
 						devtools::install_github("LE2P/rSolarDB")
 						library(rSolarDB)
 
@@ -331,10 +331,10 @@
 			maxScale: 2.0,
 			hash: true,
 			slideNumber: 'c/t',
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+			rollingLinks: true,
+			mouseWheel: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, RevealHighlight]
 		});
 	</script>
 </body>
-
 </html>
