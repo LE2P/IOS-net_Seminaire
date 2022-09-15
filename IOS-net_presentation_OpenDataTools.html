@@ -28,7 +28,7 @@
 				<p>19<sup>th</sup> September 2022</p>
 				<div class="r-hstack">
 					<img src="./images/logo_UR.jpg" alt="Logo ENERGY-Lab" width="30%">
-					<img src="./images/logo_ENERGY-Lab.png" alt="Logo ENERGY-Lab" width="0%">
+					<img src="./images/logo_ENERGY-Lab.png" alt="Logo ENERGY-Lab" width="30%">
 				</div>
 			</section>
 
@@ -180,6 +180,21 @@
 				</section>
 				<section data-background-iframe="https://solardb.univ-reunion.fr/" data-background-interactive>
 				</section>
+				<section>
+					<h4>Example of using API with Curl</h4>
+					<br />
+					<pre><code data-line-numbers="1|3|5-6" data-trim data-noescape>
+					curl -c cookie.txt https://solardb.univ-reunion.fr/api/v1/login?token=YOURTOKENHERE
+
+					curl -s -b cookie.txt https://solardb.univ-reunion.fr/api/v1/data/json?site=antananarivo | jq ".data"
+
+					curl -s -b cookie.txt https://solardb.univ-reunion.fr/api/v1/data/csv/antananarivo > antananarivo.csv
+					head antananarivo.csv
+					</code></pre>
+					<div class="fragment">
+						<img src="./images/Curl_API.png" width="80%">
+					</div>
+				</section>
 			</section>
 
 			<!-- Client libraries -->
@@ -192,7 +207,49 @@
 						<br />
 						<a>https://pypi.org/project/pysolardb/</a>
 					</div>
-					<!-- TODO : METTRE DES EXEMPLE DE CODE  : PAREIL POUR API-->
+				</section>
+				<section>
+					<h4>Example with python :</h4>
+					<br />
+					<pre><code data-line-numbers="1|2-4|6|8|10-15" data-trim data-noescape>
+					# pip install pysolardb
+					from pysolardb.SolarDB import SolarDB
+					from datetime import datetime as dt
+					import matplotlib.pyplot as plt
+
+					s = SolarDB(token="PUTYOURTOKENHERE")
+
+					data = s.getData(sites=["amitie"], sensor_types=["GHI"], start="-3d", aggrFn="mean", aggrEvery="10m")
+
+					plt.figure()
+					dates = [dt.strptime(date, "%Y-%m-%dT%H:%M:%SZ") for date in data["amitie"]["GHI_qp01_Avg"]["dates"]] 
+					values = data["amitie"]["GHI_qp01_Avg"]["values"]
+					plt.plot(dates, values)
+					plt.title(label = "GHI")
+					plt.show()
+					</code></pre>
+					<div class="fragment">
+						<img src="./images/Pyhton_amitie.png" width="70%">
+					</div>
+
+				</section>
+				<section>
+					<h4>Example with R :</h4>
+					<br />
+					<pre><code data-line-numbers="1-2|4|6|8-9" data-trim data-noescape>
+						devtools::install_github("LE2P/rSolarDB")
+						library(rSolarDB)
+
+						login(token="PUTYOURTOKENHERE")
+
+						d <- getXtsData(sites = "hahaya", start = "-7d", type = "GHI,DHI")
+
+						plot(d$hahaya$GHI_qs01_Avg, type = "l")
+						lines(d$hahaya$DHI_qs01_Avg, col = '2', type = "l")
+					</code></pre>
+					<div class="fragment">
+						<img src="./images/R_hahaya.png" width="70%">
+					</div>
 				</section>
 			</section>
 
@@ -228,7 +285,7 @@
 					<h3>News features</h3>
 					<ul>
 						<li>Presence of all stations managed by EnergyLab,</li>
-						<li>Enhance the CF-Conventions version 1.08.</li>
+						<li>Enhance the CF-Conventions version 1.08</li>
 					</ul>
 					<br /><br />
 					<h3>Breakings changes</h3>
@@ -246,7 +303,13 @@
 
 			<!-- (Optionnal) Training workshop -->
 			<section>
-				<h2>(Optionnal) Training workshop : Acces and manipulation ... </h2>
+				<h2>(Optional) Training workshop</h2>
+				<h3>Access and manipulation of the IOS-net data using Python and R</h3>
+			</section>
+
+			<!-- Thanks -->
+			<section>
+				<h1>Thanks.</h1>
 			</section>
 		</div>
 	</div>
