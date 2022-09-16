@@ -23,7 +23,7 @@
 				<img src="./images/Logo_iosnet_proj.svg" alt="Logo IOS-net" width="40%">
 				<h2>Introduction to the IOS-net open data tools</h2>
 				<br />
-				<p>-- <b>mathieu.delsaut@univ-reunion.fr</b> --</p>
+				<p><b>mathieu.delsaut@univ-reunion.fr</b></p>
 				<p>IOS-net closing seminar</p>
 				<p>19<sup>th</sup> September 2022</p>
 				<div class="r-hstack">
@@ -63,8 +63,8 @@
 						<h4>Accessible</h4>
 						<ul>
 							<li><b>OPeNDAP</b> : the data can be retrieved thanks to their identifier using a
-								standardized communication protocol. OPeNDAP is open, free and universally
-								implementable.</li>
+								standardized communication protocol. OPeNDAP is <b>open</b>, <b>free</b> and 
+								<b>universally implementable</b>.</li>
 						</ul>
 					</div>
 					<div class="fragment fade-in-then-out">
@@ -89,7 +89,7 @@
 
 			<!-- Function Schema -->
 			<section>
-				<section>
+				<section >
 					<h1>Functional Schema</h1>
 					<h2>2019 vs 2022</h2>
 				</section>
@@ -105,12 +105,44 @@
 
 			<!-- A database migration -->
 			<section>
-				<section>
+				<section data-auto-animate>
+					<h2>A database migration</h2>
+				</section>
+				<section data-auto-animate>
 					<h2>A database migration</h2>
 					<br />
 					<img src="./images/bdd_migration.svg" width="80%">
 				</section>
-				<section>
+				<section data-auto-animate>
+					<h2>A database migration</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Usage of time serie database (DB) : InfluxDB,</li>
+						<li>New injertor of data in golang : the traitment chain is quicker,</li>
+						<li>New metadata DB using MongoDB : <b>SensorDB</b>,</li>
+						<li>New app to help maintainer record metadata : <b>SensorsApp</b>.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>A database migration</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Usage of time serie database (DB) : InfluxDB,</li>
+						<li>New injertor of data in golang : the traitment chain is quicker,</li>
+						<li>New metadata DB using MongoDB : <b>SensorDB</b>,</li>
+						<li>New app to help maintainer record metadata : <b>SensorsApp</b>.</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Need to update all tools using the DB,</li>
+						<li>No more quality control store on the DB (but release python library <b>pybsrnqc</b>),</li>
+						<li>Name of stations and sensors changent for better clarity.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
 					<h2>A database migration</h2>
 					<br />
 					<h3>News features</h3>
@@ -134,7 +166,20 @@
 
 			<!-- Galilée -->
 			<section>
-				<section>
+				<section data-auto-animate>
+					<h2>IOS-net project website : Galilée<h2>
+				</section>
+				<section data-auto-animate>
+					<h2>IOS-net project website : Galilée<h2>
+							<br />
+							<h3>News features</h3>
+							<ul>
+								<li>English, finally !</li>
+								<li>Two new kinds of servicies : API & languages libraries,</li>
+								<li>New news and the all episodes of IOS-net documentary.</li>
+							</ul>
+				</section>
+				<section data-auto-animate>
 					<h2>IOS-net project website : Galilée<h2>
 							<br />
 							<h3>News features</h3>
@@ -144,6 +189,7 @@
 								<li>New news and the all episodes of IOS-net documentary.</li>
 							</ul>
 							<br /><br />
+							<h3>Link</h3>
 							<h3><a href="#/5/2">https://galilee.univ-reunion.fr/</a></h3>
 				</section>
 
@@ -153,11 +199,44 @@
 
 			<!-- API -->
 			<section>
-				<section>
-					<h2>New API </h2>
+				<section data-auto-animate>
+					<h2>SolarDB API </h2>
+				</section>
+				<section data-auto-animate>
+					<h2>SolarDB API </h2>
 					<img src="./images/new_API.svg" width="50%">
 				</section>
-				<section>
+				<section data-auto-animate>
+					<h2>SolarDB API</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Full access to data and metadata,</li>
+						<li>Everybody can use it but with registration,</li>
+						<li>Support of CSV and JSON formats,</li>
+						<li>Full documentation,</li>
+						<li>Capacity to request aggregations.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>SolarDB API</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Full access to data and metadata,</li>
+						<li>Everybody can use it but with registration,</li>
+						<li>Support of CSV and JSON formats,</li>
+						<li>Full documentation,</li>
+						<li>Capacity to request aggregations.</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Address of API change,</li>
+						<li>Necessity to rewrite all servicies using old API.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
 					<h2>SolarDB API</h2>
 					<br />
 					<h3>News features</h3>
@@ -255,7 +334,20 @@
 
 			<!-- SolarIO -->
 			<section>
-				<section>
+				<section data-auto-animate>
+					<h2>SolarIO</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>SolarIO</h2>
+					<br />
+					<h3>News features</h3>
+					<ul>
+						<li>Default data retrieval is hourly aggregation,</li>
+						<li>Possibility to switch between 1h, 10mins and 1min,</li>
+						<li>Aggregation : mean, max, min.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
 					<h2>SolarIO</h2>
 					<br />
 					<h3>News features</h3>
@@ -271,7 +363,6 @@
 						<li>iOS : <a>https://apps.apple.com/fr/app/solar-io/id1478594442</a></li>
 						<li>Android : <a>https://play.google.com/store/apps/details?id=fr.le2p.www</a></li>
 					</ul>
-
 				</section>
 				<section data-background-iframe="https://galilee.univ-reunion.fr/SolarIO/" data-background-interactive>
 				</section>
@@ -279,8 +370,36 @@
 
 			<!-- TDS and Zenodo -->
 			<section>
-				<section>
-					<h2>THREDDS Data Server</h2>
+				<section data-auto-animate>
+					<h2>THREDDS Data Server (TDS)</h2>
+					<p>FAIR data server using netcdf and csv</p>
+				</section>
+				<section data-auto-animate>
+					<h2>THREDDS Data Server (TDS)</h2>
+					<p>FAIR data server using netcdf and csv</p>
+					<h3>News features</h3>
+					<ul>
+						<li>Presence of all stations managed by EnergyLab,</li>
+						<li>Enhance the CF-Conventions version 1.08</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>THREDDS Data Server (TDS)</h2>
+					<p>FAIR data server using netcdf and csv</p>
+					<h3>News features</h3>
+					<ul>
+						<li>Presence of all stations managed by EnergyLab,</li>
+						<li>Enhance the CF-Conventions version 1.08</li>
+					</ul>
+					<br /><br />
+					<h3>Breakings changes</h3>
+					<ul>
+						<li>Monthly files,</li>
+						<li>Sensors and stations namming conventions changed.</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>THREDDS Data Server (TDS)</h2>
 					<p>FAIR data server using netcdf and csv</p>
 					<h3>News features</h3>
 					<ul>
@@ -298,15 +417,267 @@
 					<h4><a href="#/9/2">https://galilee.univ-reunion.fr/thredds/catalog.html</a></h4>
 				</section>
 				<section data-background-iframe="https://galilee.univ-reunion.fr/thredds/catalog.html"
-					data-background-interactive></section>
+					data-background-interactive>
+				</section>
+				<section>
+					<h2>Zenodo</h2>	
+					List of DOI
+				</section>
 			</section>
 
 			<!-- (Optionnal) Training workshop -->
 			<section>
-				<h2>(Optional) Training workshop</h2>
-				<h3>Access and manipulation of the IOS-net data using Python and R</h3>
-			</section>
+				<section>
+					<h2>(Optional) Training workshop</h2>
+					<h3>Access & manipulation of the IOS-net data using Python and R</h3>
+					<img src="./images/client_libraries.svg" width="50%">
+				</section>
+				<section>
+					<h3>Installation</h3>
+					<br />
+					<h4>R</h4>
+					<p>The package stays on the laboratory Github : <a>https://github.com/LE2P/rSolarDB</a>.</p>
+					<p> To install it, simply type in the R Console :</p>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						install.packages("remotes")
+						remotes::install_github("LE2P/rSolarDB")
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<p>You could find the library on pipy : <a>https://pypi.org/project/pysolardb/</a>.</p>
+					<p>After installing pip, install the library</p> 
+					<pre class="bash"><code data-line-numbers data-trim data-noescape>
+						pip install pysolardb
+					</code></pre>
+				</section>
+				<section>
+					<h3>Load library and registration</h3>
+					<br />
+					<p>We saw that in SolarDB database, you need a <b>token</b> to query data.</p>
+					<p>The token will be send on your email, and you will must open the link of validation.</p>
+					<h4>R</h4>
+					<p>Use the function register to obtain a token</p>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						library(rSolarDB)
+						register(email = "mathieu.delsaut@univ-reunion.fr")
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<p>Here, pysolardb use class. We create an object solar and call the method register.</p>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						from pysolardb.SolarDB import SolarDB
 
+						solar=SolarDB()
+						solar.register(email="mathieu.delsaut@univ-reunion.fr")
+					</code></pre>
+					--
+					<p>Now, please visit your mailbox, validate and copy your token.</p>
+
+				</section>
+				<section>
+					<h3>Login, Status and Logout</h3>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						library(rSolarDB)
+
+						login(token = "PUT_YOUR_TOKEN_HERE")
+
+						status()
+
+						logout()
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						from pysolardb.SolarDB import SolarDB
+
+						solar = SolarDB()
+						solar.login(token="PUT_YOUR_TOKEN_HERE")
+						#OR directly by creating object
+						solar = SolarDB(token="PUT_YOUR_TOKEN_HERE")
+
+						solar.status()
+
+						solar.logout()
+					</code></pre>
+					--
+					<p>Don't forget to sign in again after login.</p>
+	
+				</section>
+				<section>
+					<h3>Obtain some important list : sites, types & sensors</h3>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						sites() # List of site aliases
+						
+						types() # List of type of data : GHI, DHI, TA ...
+						
+						sensors(sites = "amitie") # List of sensors present on amitie
+					</code></pre>
+					<p>If you use RStudio, press <b>F1</b> with the cursor on function to obtain documentation.</p>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						help(sites) # Works also
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						solar.getAllSites()
+
+						solar.getAllTypes()
+
+						solar.getSensors(sites=["amitie"], sensor_types=["DHI","GHI"])
+
+						print(solar.getSensors.__doc__) # if you want to see method documentation
+					</code></pre>
+					--
+					<p>Those list are part of the data model and some parameters are needed to query datas and metadatas.</p>
+				</section>
+				<section>
+					<h3>Query Metadatas : Campaigns</h3>
+					<br />
+					<p>Campaigns are metadata about each station.</p>
+					<p>It contain informations like the alias of site, the position of the station or for exemple the <b>DOI</b></p>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						meta <- campaigns()
+						meta 
+						meta$alias
+
+						campaigns(territory = "Mauritius")
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						solar.getCampaigns()
+
+						solar.getCampaigns(territory="Mauritius")
+					</code></pre>
+				</section>
+				<section>
+					<h3>Query Metadatas : Models</h3>
+					<br />
+					<p>Models are metadata about differents models of sensors.</p>
+					<p>It contain informations like the commercial name or the constructor. Example : <b>SPN1</b>, <b>WXT536</b>, ...  </p>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						models()
+						models(type = "Meteorological")
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						solar.getModels()
+						solar.getModels(model_type="Meteorological")
+					</code></pre>
+					--
+					<p>Remarks that there is more models than in your station.</p>
+					<p>The reason is because the database contain also data from La Réunion or Durban</p>
+				</section>
+				<section>
+					<h3>Query Metadatas : Instruments</h3>
+					<br />
+					<p>Instruments are metadata about precise instrument for a certain model.</p>
+					<p>It contain informations like the serial number or a unique ID we call <b>label</b>.</p>
+					<p> Example of label : aa, pb, ct.</p>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						instruments()
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						solar.getInstruments()
+					</code></pre>
+					--
+					<p>The label will be in the measure name to identify exactly from witch intruments it come.</p>
+				</section>
+				<section>
+					<h3>Query Metadatas : Measures</h3>
+					<br />
+					<p>Measures are metadata about each series of data.</p>
+					<p>It contain informations like the CF-Conventions standard name, the aggregation function or the units</p>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						measures()
+						measures(type = "DHI")
+						measures(type = "DHI", nested = TRUE)
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						solar.getMeasures()
+						solar.getMeasures(measure_type="UVAB")
+						solar.getMeasures(measure_type="UVAB", nested=True)
+					</code></pre>
+					--
+					<p><b>nested</b> is a special parameter to merger resulte from Measures, Instruments and Models.</p>
+				</section>
+				<section>
+					<h3>Query Datas</h3>
+					<br />
+					<p>The minimum information to query data is the site alias.</p>
+					<p>By default, the return data are the last 24 hours.</p>
+					<br />
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						d <- getData(sites = "amitie,hahaya", type = "GHI")
+						head(d$amitie$GHI_qp01_Avg$dates)
+						head(d$amitie$GHI_qp01_Avg$values)
+
+						plot(d$amitie$GHI_qp01_Avg$values, type='l')
+						lines(d$hahaya$GHI_qs01_Avg$values, type='l', col=2)
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						data = solar.getData(sites=["amitie", "hahaya"], sensor_types=["GHI"])
+
+						plt.figure()
+						plt.plot(data["amitie"]["GHI_qp01_Avg"]["values"])
+						plt.plot(data["hahaya"]["GHI_qs01_Avg"]["values"])
+						plt.title(label = "GHI")
+						plt.show()
+					</code></pre>
+				</section>
+				<section>
+					<h3>Query datas between two dates</h3>
+					<br />
+					<p>By default, stop is now()</p>
+					<h4>R</h4>
+					<pre class="r"><code data-line-numbers data-trim data-noescape>
+						# By influxdb duration
+						d <- getData(sites = "diego", type = "GHI,DHI", start = "-7d")
+
+						# By date
+						d <- getData(sites = "diego", type = "GHI,DHI", start = "2021-01-01", stop = "2021-02-31")
+					</code></pre>
+					<br />
+					<h4>Pyhton</h4>
+					<pre class="python"><code data-line-numbers data-trim data-noescape>
+						data = solar.getData(sites=["diego"], sensor_types=["GHI", "DHI"], start="-2y", aggrFn="mean", aggrEvery="1w")
+
+						data = solar.getData(sites=["diego"], sensor_types=["GHI", "DHI"], start="2021-01-01", stop="2021-01-02")
+					</code></pre>
+					--
+					<p>Note that start include, stop exclude, i.e. t := [start, stop[</p>
+				</section>
+				<section>
+					<h2>That's it !</h2>
+					<br />
+					<p>More suggestions ? Wan't to colaborate ? Find a bug ?</p>
+					<p><a>https://github.com/LE2P/rSolarDB/issues</a></p>
+					<p><a>https://github.com/LE2P/pysolardb/issues</a></p>
+					<br />
+					<h1>Any Questions ?</h1>
+				</section>
+			</section>
+		
 			<!-- Thanks -->
 			<section>
 				<h1>Thanks.</h1>
