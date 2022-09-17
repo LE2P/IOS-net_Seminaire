@@ -63,8 +63,9 @@
 						<h4>Accessible</h4>
 						<ul>
 							<li><b>OPeNDAP</b> : the data can be retrieved thanks to their identifier using a
-								standardized communication protocol. OPeNDAP is <b>open</b>, <b>free</b> and 
-								<b>universally implementable</b>.</li>
+								standardized communication protocol. OPeNDAP is <b>open</b>, <b>free</b> and
+								<b>universally implementable</b>.
+							</li>
 						</ul>
 					</div>
 					<div class="fragment fade-in-then-out">
@@ -89,7 +90,7 @@
 
 			<!-- Function Schema -->
 			<section>
-				<section >
+				<section>
 					<h1>Functional Schema</h1>
 					<h2>2019 vs 2022</h2>
 				</section>
@@ -290,7 +291,7 @@
 				<section>
 					<h4>Example with python :</h4>
 					<br />
-					<pre  class="python"><code data-line-numbers="1|2-4|6|8|10-15" data-trim data-noescape>
+					<pre class="python"><code data-line-numbers="1|2-4|6|8|10-15" data-trim data-noescape>
 					# pip install pysolardb
 					from pysolardb.SolarDB import SolarDB
 					from datetime import datetime as dt
@@ -315,7 +316,7 @@
 				<section>
 					<h4>Example with R :</h4>
 					<br />
-					<pre class = "r"><code data-line-numbers="1-2|4|6|8-9" data-trim data-noescape>
+					<pre class="r"><code data-line-numbers="1-2|4|6|8-9" data-trim data-noescape>
 						devtools::install_github("LE2P/rSolarDB")
 						library(rSolarDB)
 
@@ -420,8 +421,131 @@
 					data-background-interactive>
 				</section>
 				<section>
-					<h2>Zenodo</h2>	
-					List of DOI
+					<h2>Zenodo</h2>
+					<br />
+					<table border=1 style="font-size:60%;">
+						<tr>
+							<th align="center"> name </th>
+							<th align="center"> territory </th>
+							<th align="center"> altitude </th>
+							<th align="center"> latitude </th>
+							<th align="center"> longitude </th>
+							<th align="center"> doi </th>
+							<th align="center"> minDate </th>
+							<th align="center"> maxDate </th>
+						</tr>
+						<tr>
+							<td align="right"> Amitie </td>
+							<td align="right"> Seychelles </td>
+							<td align="right"> 3.00 </td>
+							<td align="right"> -4.32 </td>
+							<td align="right"> 55.69 </td>
+							<td align="right"> 10.5281/zenodo.4408667 </td>
+							<td align="right"> 2019-11-20 10:59:00 </td>
+							<td align="right"> 2022-09-17 07:18:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Anse Boileau </td>
+							<td align="right"> Seychelles </td>
+							<td align="right"> 2.00 </td>
+							<td align="right"> -4.71 </td>
+							<td align="right"> 55.48 </td>
+							<td align="right"> 10.5281/zenodo.4408665 </td>
+							<td align="right"> 2019-11-18 13:25:00 </td>
+							<td align="right"> 2022-09-17 07:18:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Antananarivo </td>
+							<td align="right"> Madagascar </td>
+							<td align="right"> 1309.00 </td>
+							<td align="right"> -18.90 </td>
+							<td align="right"> 47.55 </td>
+							<td align="right"> 10.5281/zenodo.4408673 </td>
+							<td align="right"> 2019-11-19 11:56:00 </td>
+							<td align="right"> 2022-09-17 07:15:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Caverne Dufour </td>
+							<td align="right"> La Réunion </td>
+							<td align="right"> 2495.00 </td>
+							<td align="right"> -21.11 </td>
+							<td align="right"> 55.50 </td>
+							<td align="right"> 10.5281/zenodo.5812546 </td>
+							<td align="right"> 2021-06-16 11:13:00 </td>
+							<td align="right"> 2022-09-17 07:17:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Antsiranana </td>
+							<td align="right"> Madagascar </td>
+							<td align="right"> 108.00 </td>
+							<td align="right"> -12.35 </td>
+							<td align="right"> 49.29 </td>
+							<td align="right"> 10.5281/zenodo.4408675 </td>
+							<td align="right"> 2019-11-21 11:37:00 </td>
+							<td align="right"> 2022-09-17 07:17:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Hahaya </td>
+							<td align="right"> Comores </td>
+							<td align="right"> 32.00 </td>
+							<td align="right"> -11.54 </td>
+							<td align="right"> 43.28 </td>
+							<td align="right"> 10.5281/zenodo.4408671 </td>
+							<td align="right"> 2019-12-05 11:12:00 </td>
+							<td align="right"> 2022-09-17 07:14:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Radio Telescope Bras D'Eau </td>
+							<td align="right"> Mauritius </td>
+							<td align="right"> 27.00 </td>
+							<td align="right"> -20.14 </td>
+							<td align="right"> 57.73 </td>
+							<td align="right"> 10.5281/zenodo.4408660 </td>
+							<td align="right"> 2015-11-24 10:07:00 </td>
+							<td align="right"> 2022-09-17 07:16:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Ouani </td>
+							<td align="right"> Comores </td>
+							<td align="right"> 20.00 </td>
+							<td align="right"> -12.13 </td>
+							<td align="right"> 44.43 </td>
+							<td align="right"> 10.5281/zenodo.4408669 </td>
+							<td align="right"> 2019-12-06 12:27:00 </td>
+							<td align="right"> 2022-09-17 07:17:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Plaine des Palmistes Parc National </td>
+							<td align="right"> La Réunion </td>
+							<td align="right"> 1057.00 </td>
+							<td align="right"> -21.14 </td>
+							<td align="right"> 55.62 </td>
+							<td align="right"> 10.5281/zenodo.4408677 </td>
+							<td align="right"> 2018-12-12 11:45:00 </td>
+							<td align="right"> 2022-09-17 07:16:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Reserve Francois Leguat </td>
+							<td align="right"> Mauritius </td>
+							<td align="right"> 36.00 </td>
+							<td align="right"> -19.76 </td>
+							<td align="right"> 63.37 </td>
+							<td align="right"> 10.5281/zenodo.4001619 </td>
+							<td align="right"> 2017-05-09 11:00:00 </td>
+							<td align="right"> 2022-09-03 10:45:00 </td>
+						</tr>
+						<tr>
+							<td align="right"> Vacoas </td>
+							<td align="right"> Mauritius </td>
+							<td align="right"> 431.00 </td>
+							<td align="right"> -20.30 </td>
+							<td align="right"> 57.50 </td>
+							<td align="right"> 10.5281/zenodo.4408662 </td>
+							<td align="right"> 2019-10-29 13:47:00 </td>
+							<td align="right"> 2022-09-17 07:15:00 </td>
+						</tr>
+					</table>
+
 				</section>
 			</section>
 
@@ -445,7 +569,7 @@
 					<br />
 					<h4>Pyhton</h4>
 					<p>You could find the library on pipy : <a>https://pypi.org/project/pysolardb/</a>.</p>
-					<p>After installing pip, install the library</p> 
+					<p>After installing pip, install the library</p>
 					<pre class="bash"><code data-line-numbers data-trim data-noescape>
 						pip install pysolardb
 					</code></pre>
@@ -503,7 +627,7 @@
 					</code></pre>
 					--
 					<p>Don't forget to sign in again after login.</p>
-	
+
 				</section>
 				<section>
 					<h3>Obtain some important list : sites, types & sensors</h3>
@@ -532,13 +656,16 @@
 						print(solar.getSensors.__doc__) # if you want to see method documentation
 					</code></pre>
 					--
-					<p>Those list are part of the data model and some parameters are needed to query datas and metadatas.</p>
+					<p>Those list are part of the data model and some parameters are needed to query datas and
+						metadatas.</p>
 				</section>
 				<section>
 					<h3>Query Metadatas : Campaigns</h3>
 					<br />
 					<p>Campaigns are metadata about each station.</p>
-					<p>It contain informations like the alias of site, the position of the station or for exemple the <b>DOI</b></p>
+					<p>It contain informations like the alias of site, the position of the station or for exemple the
+						<b>DOI</b>
+					</p>
 					<br />
 					<h4>R</h4>
 					<pre class="r"><code data-line-numbers data-trim data-noescape>
@@ -560,7 +687,9 @@
 					<h3>Query Metadatas : Models</h3>
 					<br />
 					<p>Models are metadata about differents models of sensors.</p>
-					<p>It contain informations like the commercial name or the constructor. Example : <b>SPN1</b>, <b>WXT536</b>, ...  </p>
+					<p>It contain informations like the commercial name or the constructor. Example : <b>SPN1</b>,
+						<b>WXT536</b>, ...
+					</p>
 					<br />
 					<h4>R</h4>
 					<pre class="r"><code data-line-numbers data-trim data-noescape>
@@ -600,7 +729,8 @@
 					<h3>Query Metadatas : Measures</h3>
 					<br />
 					<p>Measures are metadata about each series of data.</p>
-					<p>It contain informations like the CF-Conventions standard name, the aggregation function or the units</p>
+					<p>It contain informations like the CF-Conventions standard name, the aggregation function or the
+						units</p>
 					<br />
 					<h4>R</h4>
 					<pre class="r"><code data-line-numbers data-trim data-noescape>
@@ -677,7 +807,7 @@
 					<h1>Any Questions ?</h1>
 				</section>
 			</section>
-		
+
 			<!-- Thanks -->
 			<section>
 				<h1>Thanks.</h1>
@@ -708,4 +838,5 @@
 		});
 	</script>
 </body>
+
 </html>
