@@ -779,7 +779,7 @@
 					<br />
 					<h4>R</h4>
 					<pre class="r"><code data-line-numbers data-trim data-noescape>
-						d <- getData(sites = "amitie,hahaya", type = "GHI")
+						d <- getData(sites = "amitie,hahaya", types = "GHI")
 						head(d$amitie$GHI_qp01_Avg$dates)
 						head(d$amitie$GHI_qp01_Avg$values)
 
@@ -805,10 +805,10 @@
 					<h4>R</h4>
 					<pre class="r"><code data-line-numbers data-trim data-noescape>
 						# By influxdb duration
-						d <- getData(sites = "diego", type = "GHI,DHI", start = "-7d")
+						d <- getData(sites = "diego", types = "GHI,DHI", start = "-7d")
 
 						# By date
-						d <- getData(sites = "diego", type = "GHI,DHI", start = "2021-01-01", stop = "2021-02-31")
+						d <- getData(sites = "diego", type = "GHI,DHI", start = "2021-01-01", stop = "2021-02-01")
 					</code></pre>
 					<br />
 					<h4>Python</h4>
