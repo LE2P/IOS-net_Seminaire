@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Exo';
-    src: url('exo.otf') format('truetype');
+    src: url('./Exo2-ExtraBold.eot');
+    src: url('./Exo2-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('./Exo2-ExtraBold.woff') format('woff'),
+         url('./Exo2-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
